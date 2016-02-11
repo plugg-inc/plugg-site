@@ -21,7 +21,7 @@
 
     </head>
     <body>
-    <div class="row">
+
     <div class="animsition">
         <header class="navbar navbar-default container-fluid">
             <nav class="menu" >
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <ul class = "nav navbar-nav navbar-right collapse navbar-collapse" id = "top-nav-collapse">
-                    <li class="top-link index"><a href="#section-about">OVERVIEW</a></li>
+                    <li class="top-link index"><a href="#section-overview">OVERVIEW</a></li>
                     <li class="top-link index"><a href="#section-how-it-works">HOW IT WORKS</a></li>
                     <li class="top-link index"><a href="#section-team">THE TEAM</a></li>
                     <li class="top-link index"><a href="#section-contact">CONTACT US</a></li>
@@ -48,14 +48,50 @@
         </header>
 
         <div class="box">
-        <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="muvr-banner"><figure class="tint"></figure></div>
-            <div class="shoppr-banner"><figure class="tint"></figure></div>
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="muvr-banner"><figure class="tint"></figure></div>
+                <div class="shoppr-banner"><figure class="tint"></figure></div>
 
-        </div>
+            </div>
+
+
+            <section id="section-overview">
+                <h2>Plugg is the peer-to-peer shipping solution for the modern Filipino</h2>
+                <!--hr class="grayscale"-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" >
+                            <div class="overview-card">
+                                <div class="about-text">
+                                    <img src="images/p2p.png" width="250px">
+                                    <h3>P2P</h3>
+                                    <p>Plugg is a network of Shopprs (aka buyers) and Muvrs (aka travellers)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" >
+                            <div class="overview-card">
+                                <div class="about-text">
+                                    <h3>DELIVERY</h3>
+                                    <p>Muvrs going to the Philippines bring with them purchases made by Shopprs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" >
+                            <div class="overview-card">
+                                <div class="about-text">
+                                    <h3>HASSLE FREE</h3>
+                                    <p>Plugg is an efficient and effective way to get purchases at your convenience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </div>
     </div>
-    </div>
+
     </body>
 
     <script src="js/jquery.min.js"></script>
@@ -73,6 +109,7 @@
 
         });
         var $carouselControls = $(".owl-controls").children();
+        $(".navbar").sticky({});
 
     </script>
 
