@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Plugg - Minimising Distance, Maximising Travel</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+        <link rel="stylesheet" href="js/slick/slick-theme.css">
+        <link rel="stylesheet" href="js/animsition/dist/css/animsition.min.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="css/default.css">
+
+
+
+
+    </head>
+    <body>
+    <div class="row">
+    <div class="animsition">
+        <header class="navbar navbar-default container-fluid">
+            <nav class="menu" >
+                <div class="navbar-header" style="background: transparent">
+                    <div class="navbar-brand indexheader"><a href="#section-title"><img class= ""src="images/logo.png" width="147" height=""></a>
+                    </div>
+                    <div class="toggle-button-wrapper navbar-right" style="background: white">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+                <ul class = "nav navbar-nav navbar-right collapse navbar-collapse" id = "top-nav-collapse">
+                    <li class="top-link index"><a href="#section-about">OVERVIEW</a></li>
+                    <li class="top-link index"><a href="#section-how-it-works">HOW IT WORKS</a></li>
+                    <li class="top-link index"><a href="#section-team">THE TEAM</a></li>
+                    <li class="top-link index"><a href="#section-contact">CONTACT US</a></li>
+                    <li class="top-link index"><div style="padding-top: 5px"><button id="button-learn-more"type="button" class= "ghost-btn">SIGN UP</button></div></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div class="box">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="muvr-banner"><figure class="tint"></figure></div>
+            <div class="shoppr-banner"><figure class="tint"></figure></div>
+
+        </div>
+        </div>
+    </div>
+    </div>
+    </body>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animsition/dist/js/animsition.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="js/default.js"></script>
+    <script>
+        $("#owl-demo").owlCarousel({
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem : true,
+
+        });
+        var $carouselControls = $(".owl-controls").children();
+
+    </script>
+
+</html>
