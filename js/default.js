@@ -16,11 +16,13 @@ $(".animsition").animsition({
 });*/
 
 $("#banner-carousel").owlCarousel({
-    slideSpeed : 300,
-    paginationSpeed : 400,
     singleItem : true,
-
+    autoPlay : 7000,
+    scrollPerPage :true,
+    slideSpeed : 600,
+    navigation : true
 });
+
 $(".owl-item").each( function(index, element) {
     if(index == 0) {
         $(element).css({
