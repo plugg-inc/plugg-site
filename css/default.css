@@ -8,8 +8,8 @@ header {
     z-index: 1;
     transition : 0.5s;
     font-family : ProximaNovaReg;
-    letter-spacing : 1px;
-
+    letter-spacing : 1.2px;
+    font-weight: 700;
 }
 hr {
     border: none;
@@ -27,7 +27,8 @@ hr.grayscale {
 }
 
 body {
-    color: #9CAFC3;
+    color: #516880;
+    font-family: ProximaNovaReg;
 }
 
 
@@ -36,8 +37,35 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: whitesmoke;
+    color: white;
+    position: relative;
+    text-decoration: none;
+
 }
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar-default .navbar-nav>li>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
 
 .navbar-default .navbar-nav>li>div>button {
     color: whitesmoke;
@@ -57,7 +85,7 @@ body {
     padding-top : 10px;
 }
 .is-sticky header{
-    background-color : #444444;
+    background-color : #333333;
     transition : .5s;
 }
 #navbar-logo {
@@ -69,7 +97,7 @@ body {
 
 
 
-.box {
+.wrapper {
     /* z-index: 1; */
 
     width: 100%;
@@ -100,7 +128,7 @@ body {
 
 
 
-.ghost-btn {
+button#nav-sign-up {
     display: inline-block;
     text-decoration: none;
     border: 2px solid whitesmoke;
@@ -132,21 +160,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
-
-/*
-    letter-spacing:1px;
-    font-size: 1.2em;
-    font-weight:900;*/
 }
-.ghost-btn:hover {
+button#nav-sign-up:hover {
     -webkit-transition: 0.2s ease;
     -moz-transition: 0.2s ease;
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
     background-color: whitesmoke;
     font-weight: 700;
-}
-button#nav-sign-up:hover {
     color: #444444;
     font-weight: 700;
 }
@@ -166,7 +187,7 @@ button#nav-sign-up:hover {
     margin-right: 20px;
     margin-bottom: 20px;
     cursor: pointer;
-    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.4) 3px 5px 5px;
     height: 100vh;
     width:100%;
 
@@ -240,7 +261,7 @@ button#nav-sign-up:hover {
     display:block;
     padding:20px;
     font-family: ProximaNovaReg;
-    font-weight: 900;
+    font-weight: 900        ;
     letter-spacing : 1px;
 
 }
@@ -250,4 +271,102 @@ button#nav-sign-up:hover {
 
 .navbar-toggle {
     margin-top: 25px;
+}
+
+#banner-carousel h1{
+    margin-bottom: -15px;
+    font-size: 3.5em;
+}
+
+button#view-muvrs {
+    display: inline-block;
+    text-decoration: none;
+    font-weight:900;
+    height: 30px;
+    width: 170px;
+    line-height: 36px;
+    -webkit-border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 5px;
+    -moz-background-clip:	 padding;
+    border-radius: 5px;
+    background-clip: padding-box;
+    padding: .5em 1.5em .7em 1.5em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    zoom: 1;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    letter-spacing:1px;
+    text-transform: uppercase;
+
+    font-size: 1.3em;
+    border: 3px solid #6696C8;
+    color: #FFFFFF;
+    background: #6696C8;
+
+}
+button#view-muvrs:hover {
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    color: #ffffff;
+    font-size: 1.6em;
+}
+button#view-muvrs:focus {
+    outline: none;
+}
+
+
+button#sign-up-as-muvr {
+    display: inline-block;
+    text-decoration: none;
+    font-weight:900;
+    height: 42px;
+    width: 170px;
+    /*line-height: 36px;*/
+    -webkit-border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 5px;
+    -moz-background-clip:	 padding;
+    border-radius: 5px;
+    background-clip: padding-box;
+    padding: .5em 1.5em .7em 1.5em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    zoom: 1;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    letter-spacing:1px;
+    text-transform: uppercase;
+
+    font-size: 1.3em;
+    border: 3px solid #6696C8;
+    color: #FFFFFF;
+    background: #6696C8;
+
+}
+button#sign-up-as-muvr:hover {
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    color: #ffffff;
+    font-size: 1.6em;
+}
+button#sign-up-as-muvr:focus {
+    outline: none;
 }

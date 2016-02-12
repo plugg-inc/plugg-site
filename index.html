@@ -41,19 +41,27 @@
                     <li class="top-link index"><a href="#section-how-it-works">HOW IT WORKS</a></li>
                     <li class="top-link index"><a href="#section-team">THE TEAM</a></li>
                     <li class="top-link index" style="padding-right: 5px"><a href="#section-contact">CONTACT US</a></li>
-                    <li class="top-link index"><div style="padding-top: 5px"><button id="nav-sign-up"type="button" class= "ghost-btn">SIGN UP</button></div></li>
+                    <li class="top-link index"><div style="padding-top: 5px"><button id="nav-sign-up"type="button" class= "">SIGN UP</button></div></li>
 
                 </ul>
             </nav>
         </header>
 
-        <div class="box">
-            <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="muvr-banner"><!--figure class="tint"--></figure></div>
-                <div class="shoppr-banner"><!--figure class="tint"--></figure></div>
-
+        <div class="wrapper">
+            <div id="banner-carousel" class="owl-carousel owl-theme">
+                <div class="shoppr-banner" style="color: white; padding-top:275px; padding-left:50px">
+                    <h1>MINIMISE DISTANCE</h1>
+                    <h3>Shop like you're on the other side of the world with Plugg</h3>
+                    <h5 style="padding-bottom: 10px">LEARN MORE</h5>
+                    <button id="view-muvrs" type="button" class="ghost-btn">VIEW MUVRS</button>
+                </div>
+                <div class="muvr-banner" style="color: white; padding-top:275px; padding-left:50px">
+                    <h1>MAXIMISE TRAVEL</h1>
+                    <h3>Extra luggage space can mean extra earnings with Plugg</h3>
+                    <h5 style="padding-bottom: 10px">LEARN MORE</h5>
+                    <button id="sign-up-as-muvr" type="button" class="ghost-btn" style="text-align: center">SIGN UP AS A <br style="padding-top: -10px">MUVR</button>
+                </div>
             </div>
-
 
             <section id="section-overview">
                 <h2>Plugg is the peer-to-peer shipping solution for the modern Filipino</h2>
@@ -87,11 +95,10 @@
                         </div>
                     </div>
                 </div>
-
             </section>
         </div>
-    </div>
 
+    </div>
     </body>
 
     <script src="js/jquery.min.js"></script>
@@ -102,48 +109,7 @@
     <script src="js/owl-carousel/owl.carousel.js"></script>
     <script src="js/default.js"></script>
     <script>
-        $("#owl-demo").owlCarousel({
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem : true,
 
-        });
-        $(".owl-item").each(function(index, element) {
-            if(index == 0) {
-                $(element).css({
-                    "background": "url(./images/muvr-banner.jpg) no-repeat fixed center center",
-                    "background-size" : "cover"
-
-                });
-
-            } else {
-                $(element).css({
-                    "background": "url(./images/shoppr-banner.jpg) no-repeat",
-                    "background-size" : "cover"
-                });
-
-            }
-        });
-       /* var backgroundHeight = $(".owl-item").css("height");
-        $(".tint").each(function(index, element) {
-            $(element).css({
-               "height" : backgroundHeight
-            });
-
-        }); */
-        $(".navbar").sticky({});
-        $(".navbar").on('sticky-start', function(){
-            $("#navbar-logo").css("width", 85).attr('src', 'images/logo-white.png');
-            $(".navbar-default .navbar-nav>li>a").css('font-size','12px');
-            $(".navbar-default .navbar-nav>li>div>button").css('font-size','12px');
-        });
-        $(".navbar").on('sticky-end', function(){
-            $("#navbar-logo").css("width", 147);
-            $("#navbar-logo").attr('src', 'images/logo.png');
-            $(".navbar-default .navbar-nav>li>a").css('font-size','14px');
-            $(".navbar-default .navbar-nav>li>div>button").css('font-size','14px');
-
-        });
     </script>
 
 </html>
