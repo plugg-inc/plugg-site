@@ -26,7 +26,7 @@
         <header class="navbar navbar-default container-fluid">
             <nav class="menu" >
                 <div class="navbar-header" style="background: transparent">
-                    <div class="navbar-brand indexheader"><a href="#section-title"><img class= ""src="images/logo.png" width="147" height=""></a>
+                    <div class="navbar-brand indexheader"><a href="#section-title"><img id="navbar-logo"class= ""src="images/logo.png" width="147" height=""></a>
                     </div>
                     <div class="toggle-button-wrapper navbar-right" style="background: white">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-collapse">
@@ -49,8 +49,8 @@
 
         <div class="box">
             <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="muvr-banner"><figure class="tint"></figure></div>
-                <div class="shoppr-banner"><figure class="tint"></figure></div>
+                <div class="muvr-banner"><!--figure class="tint"--></figure></div>
+                <div class="shoppr-banner"><!--figure class="tint"--></figure></div>
 
             </div>
 
@@ -108,9 +108,40 @@
             singleItem : true,
 
         });
-        var $carouselControls = $(".owl-controls").children();
-        $(".navbar").sticky({});
+        $(".owl-item").each(function(index, element) {
+            if(index == 0) {
+                $(element).css({
+                    "background": "url(./images/muvr-banner.jpg) no-repeat fixed center center",
+                    "background-size" : "cover"
+                });
 
+            } else {
+                $(element).css({
+                    "background": "url(./images/shoppr-banner.jpg) no-repeat",
+                    "background-size" : "cover"
+                });
+
+            }
+        });
+       /* var backgroundHeight = $(".owl-item").css("height");
+        $(".tint").each(function(index, element) {
+            $(element).css({
+               "height" : backgroundHeight
+            });
+
+        }); */
+        $(".navbar").sticky({});
+        $(".navbar").on('sticky-start', function(){
+            $("#navbar-logo").css("width", 85);
+            $(".navbar-default .navbar-nav>li>a").css('font-size','12px');
+            $(".navbar-default .navbar-nav>li>div>button").css('font-size','12px');
+        });
+        $(".navbar").on('sticky-end', function(){
+            $("#navbar-logo").css("width", 147);
+            $(".navbar-default .navbar-nav>li>a").css('font-size','14px');
+            $(".navbar-default .navbar-nav>li>div>button").css('font-size','14px');
+
+        });
     </script>
 
 </html>

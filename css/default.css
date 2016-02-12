@@ -1,7 +1,15 @@
 header {
     z-index: 1;
+    transition : 0.5s;
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: whitesmoke;
 }
 
+.navbar-default .navbar-nav>li>div>button {
+    color: whitesmoke;
+}
 hr {
     border: none;
     height: 3px;
@@ -17,6 +25,14 @@ hr.grayscale {
 
     background-color: #9CAFC3;
 
+}
+
+.is-sticky header{
+    background-color : black;
+    transition : 1s;
+}
+.navbar {
+    max-height : 65px;
 }
 
 .row {
@@ -58,7 +74,7 @@ hr.grayscale {
     top: 0;
 
     bottom:0;
-    /*background: rgba(52, 52, 54, 0.4);*/
+    background: rgba(52, 52, 54, 0.9);
 
     padding-top: 0;
 
