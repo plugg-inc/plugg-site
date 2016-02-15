@@ -94,7 +94,7 @@ $("#how-it-works-shoppr").on('click', function(){
 
 });
 $(document).ready(function() {
-    $(".index a").on("click", function(e) {
+    $(".top-link a").on("click", function(e) {
         e.preventDefault();
         var targetPage = $(this).attr("href");
         $(window).scrollTo(targetPage, 100);
