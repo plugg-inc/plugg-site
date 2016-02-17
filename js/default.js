@@ -37,17 +37,19 @@ $(".owl-item").each( function(index, element) {
     }
 });
 
+
+var navbarClass = $(".navbar");
 //Resizing and adjusting of navBar when scrolled Down
-$(".navbar").sticky({
+navbarClass.sticky({
     getWidthFrom: '.animsition',
     responsiveWidth: true
 });
-$(".navbar").on('sticky-start', function(){
+navbarClass.on('sticky-start', function(){
     $("#navbar-logo").css("width", 85).attr('src', 'images/logo-white.png');
     $(".navbar-default .navbar-nav>li>a").css('font-size','12px');
     $(".navbar-default .navbar-nav>li>div>button").css('font-size','12px');
 });
-$(".navbar").on('sticky-end', function(){
+navBarClass.on('sticky-end', function(){
     $("#navbar-logo").css("width", 147);
     $("#navbar-logo").attr('src', 'images/logo.png');
     $(".navbar-default .navbar-nav>li>a").css('font-size','14px');
@@ -107,5 +109,18 @@ $(document).ready(function() {
 
     });
 
+});
+
+function log(obj) {
+    console.log(JSON.stringify(obj));
+}
+
+var m = new mandrill.Mandrill('BPm678AUJO_JZFEY0L0xsA');
+
+m.users.info(function(res) {
+    console.log(JSON.stringify(res.stats.today.sent) +'emails sent');
+    console.log(JSON.stringify(res.stats.today.opens)  + 'total opens');
+}, function(err) {
+    console.error(JSON.stringify(err));
 });
 
