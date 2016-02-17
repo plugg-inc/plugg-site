@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f93141db-f446-4cad-b791-40f1e04dbbb9" name="Default" comment="Added get in touch section">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/getintouch.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/animsition" afterPath="" />
+    <list default="true" id="f93141db-f446-4cad-b791-40f1e04dbbb9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.css" afterPath="$PROJECT_DIR$/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/default.js" afterPath="$PROJECT_DIR$/js/default.js" />
     </list>
     <ignored path="Plugg-site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -261,7 +255,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/plugg-site-master1" />
     <property name="editor.config.accepted" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -339,6 +333,13 @@
       <option name="number" value="Default" />
       <updated>1454746690217</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added get in touch section">
+      <created>1455682187974</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1455682187974</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
