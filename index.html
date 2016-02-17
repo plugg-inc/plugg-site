@@ -23,12 +23,12 @@
     <body>
 
     <div class="animsition">
-        <header class="navbar navbar-default container-fluid">
+        <header class="navbar  navbar-default container-fluid">
             <nav class="menu" >
                 <div class="navbar-header" style="background: transparent">
                     <div class="navbar-brand indexheader"><a href="#section-title"><img id="navbar-logo" class= "" src="images/logo.png" width="147" height=""></a>
                     </div>
-                    <div class="toggle-button-wrapper navbar-right" style="background: white">
+                    <div class="toggle-button-wrapper navbar-right">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -46,6 +46,7 @@
                 </ul>
             </nav>
         </header>
+
 
         <div class="wrapper">
             <div id="banner-carousel" class="owl-carousel owl-theme">
@@ -103,8 +104,11 @@
                 <h1>HOW IT WORKS</h1>
                 <button id="how-it-works-shoppr" class="how-it-work-buttons">SHOPPR</button>
                 <button id="how-it-works-muvr" class="how-it-work-buttons">MUVR</button>
-                <h3>I am a Shoppr who wants my item delivered to the Philippines</h3>
-                <div class="how-it-works-container" >
+                <div style="height:50px">
+                    <h3 class="shoppr-header">I am a Shoppr who wants my item delivered to the Philippines</h3>
+                    <h3 class="muvr-header">I am a Muvr who wants to deliver a parcel to the Philippines</h3>
+                </div>
+                <div class="how-it-works-container">
                     <ol id="how-it-works-shoppr-list" class="how-it-works-list">
                         <li>Select a Muvr who fits your desired schedule and point of delivery.</li>
                         <li>Purchase your desired parcel.</li>
@@ -226,7 +230,7 @@
                         <!-- Button -->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="submit"></label>
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <button name="submit" id="submit" class="how-it-work-buttons">SUBMIT</button>
                             </div>
                         </div>
@@ -234,8 +238,8 @@
                 </form>
             </section>
         </div>
-
     </div>
+
     </body>
 
     <script src="js/jquery.min.js"></script>

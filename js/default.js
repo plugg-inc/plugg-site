@@ -2,10 +2,9 @@
  * Created by Sean Yu on 6 Feb 2016.
  */
 //fadeIn animation of website
-$(".animsition").animsition({
+$(".animsition").animsition( {
     inClass: 'fade-in',
     outClass: 'fade-out',
-    linkElement: 'header a',
     inDuration: 1000,
     outDuration: 500
 });
@@ -30,7 +29,7 @@ $(".owl-item").each( function(index, element) {
         });
     } else if(index == 1) {
         $(element).css({
-            "background": "url(./images/muvr-banner.jpg) no-repeat center",
+            "background": "url(./images/muvr-banner.jpg) no-repeat center center",
             "background-size" : "cover",
             "box-shadow": "rgba(0,0,0,.4) 3px 5px 5px"
         });
@@ -38,18 +37,17 @@ $(".owl-item").each( function(index, element) {
 });
 
 
-var navbarClass = $(".navbar");
 //Resizing and adjusting of navBar when scrolled Down
-navbarClass.sticky({
+$(".navbar").sticky({
     getWidthFrom: '.animsition',
     responsiveWidth: true
 });
-navbarClass.on('sticky-start', function(){
+$(".navbar").on('sticky-start', function(){
     $("#navbar-logo").css("width", 85).attr('src', 'images/logo-white.png');
     $(".navbar-default .navbar-nav>li>a").css('font-size','12px');
     $(".navbar-default .navbar-nav>li>div>button").css('font-size','12px');
 });
-navBarClass.on('sticky-end', function(){
+$(".navbar").on('sticky-end', function(){
     $("#navbar-logo").css("width", 147);
     $("#navbar-logo").attr('src', 'images/logo.png');
     $(".navbar-default .navbar-nav>li>a").css('font-size','14px');
@@ -79,6 +77,8 @@ $("#how-it-works-muvr").on('click', function(){
     $("#how-it-works-shoppr-list").find("li").fadeOut();
     $("#how-it-works-muvr-list").delay(250).show();
     $("#how-it-works-muvr-list").find('li').delay(delayTimeFadeIn).fadeIn();
+    $(".shoppr-header").fadeOut();
+    $(".muvr-header").delay(delayTimeFadeIn).fadeIn();
 
 });
 $("#how-it-works-shoppr").on('click', function(){
@@ -93,13 +93,19 @@ $("#how-it-works-shoppr").on('click', function(){
     $("#how-it-works-muvr-list").find('li').hide();
     $("#how-it-works-muvr-list").hide();
     $("#how-it-works-shoppr-list").find("li").delay(delayTimeFadeIn).fadeIn();
+    $(".muvr-header").css("display", 'none');
+    $(".shoppr-header").fadeIn();
 
 });
 $(document).ready(function() {
+    var textBoxWidth = $("#name").css('width');
+    $("#msg").css('width', textBoxWidth);
     $(".top-link a").on("click", function(e) {
         e.preventDefault();
+
+        $(".top-link a").css('color','white');
         var targetPage = $(this).attr("href");
-        $(window).scrollTo(targetPage, 100);
+        $(window).scrollTo(targetPage, 400);
 
     });
     $(".indexheader a").on("click", function(e) {
